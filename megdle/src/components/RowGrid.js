@@ -14,8 +14,6 @@ const GridRow = (props) => {
         let megdle = context.megdle
         let megdleLetter = megdle[pos]
 
-        console.log(megdleLetter + " " + letter)
-
         //if a match, green
         if (megdleLetter == letter) {
             return '#6AAA64'
@@ -59,7 +57,7 @@ const GridRow = (props) => {
             if (letterList.length < 5) {
                 let extraRowCount = 5 - letterList.length
                 for (let i = 0; i < extraRowCount; i++) {
-                    columns.push(<Col><Avatar shape={'square'} size={64} /></Col>)
+                    columns.push(<Col><Avatar shape={'square'} size={64} style={blankStyle}/></Col>)
                 }
             }
 

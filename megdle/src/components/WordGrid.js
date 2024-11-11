@@ -24,9 +24,9 @@ const WordGrid = () => {
         const dataList = createDataList()
 
         return (
-            dataList.map(word =>
+            dataList.map((word, index) =>
                 <>
-                    <GridRow rowWord={word}/>
+                    <GridRow rowWord={word} currentRow={index == current.row}/>
                 </>
             )
         )
