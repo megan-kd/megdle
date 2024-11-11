@@ -6,7 +6,7 @@ const LetterKey = (props) => {
     const currentWord = useContext(WordContext)
     const keyLetter = props.letter ? props.letter : ' '
     const onClick = () => {
-        console.log(keyLetter)
+        //console.log(keyLetter)
         if (currentWord.word.length < 5){
             currentWord.updateWord(currentWord.word + keyLetter)
         }

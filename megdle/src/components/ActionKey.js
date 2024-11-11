@@ -16,7 +16,7 @@ const ActionKey = (props) => {
         }
         else //delete
         {
-            console.log('delete')
+            //console.log('delete')
             currentWord.updateWord(currentWord.word.slice(0, -1))
         }
     }

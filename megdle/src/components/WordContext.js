@@ -6,6 +6,7 @@ export const WordContextProvider = ({children}) => {
     const [word, setWord] = useState('')
     const [row, setRow] = useState(0)
     const [pastAttempts, setPastAttempts] = useState([])
+    const wordtoGuess = 'FLINT'
 
     var value = {
         word: word,
@@ -13,7 +14,8 @@ export const WordContextProvider = ({children}) => {
         row: row,
         updateRow: setRow,
         pastAttempts: pastAttempts,
-        updatePastAttempts: setPastAttempts
+        updatePastAttempts: setPastAttempts,
+        megdle: "LEARN"
     }
 
     return <WordContext.Provider value={value}>

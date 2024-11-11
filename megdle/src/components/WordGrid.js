@@ -4,7 +4,6 @@ import GridRow from './RowGrid'
 import {Space} from 'antd'
 
 const WordGrid = () => {
-    const wordToGuess = "FLINT"
     const current = useContext(WordContext)
 
     const createDataList = () => {
